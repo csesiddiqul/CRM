@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- MATERIAL ICON -->
+    <script src="jquary/jquary.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="myLoad()">
+
+  <div id="loading"></div>
+  <div class="container">
+
+    <!---------------ASIDE STRAT----------------------->
+    <aside>
+      <div class="top">
+        <div class="logo">
+            <img src="./img/ipcl.png" alt="">
+        </div>
+        <div class="close" id="close-btn">
+                  <span class="material-icons-sharp">
+                    <i class="fa-solid fa-xmark"></i>
+                  </span>
+        </div>
+      </div>
+
+        <div class="sidebar">
+
+
+          <a href="#" class="active"  >
+            <span class="">
+              <i class="fa-solid fa-circle-user"></i>
+            </span>
+
+            <h3>My Profile</h3>
+          </a>
+
+          <a href="work_information.html" >
+                  <span class="">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </span>
+              <h3>Work information</h3>
+        
+           </a>
+        
+        
+        <div class="sub" id="myDIV">  
+            <ul>  
+              <li><a href="applications.html" >Applications</a></li>
+              <li><a href="application_short_list.html" >Application Short List</a></li>
+              <li><a href="#" class="active_2"  >CV</a></li>
+              <li><a href="interview_process.html" >Interview Process</a></li>
+            </ul>
+        </div>
+
+
+
+          <a href="employee_message.html">
+            <span class="">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+
+            <h3>Message</h3>
+
+            <span class="message-count">12</span>
+
+          </a>
+
+
+          <a href="#" target="_blank">
+            <span class="">
+              <i class="fa-regular fa-credit-card"></i>
+            </span>
+
+            <h3>Financial System</h3>
+          </a>
+
+          <a href="#">
+            <span class="material-icons-sharp">
+              settings
+            </span>
+
+            <h3>Setting</h3>
+          </a>
+
+
+          <a href="index.html">
+            <span class="material-icons-sharp">
+              power_settings_new
+              </span>
+
+            <h3>Log out </h3>
+          </a>
+        </div>
+    </aside>
+    <!---------------ASIDE END----------------------->
+
+    <!-- ----------START OF MANI----------------------->
+    <main>
+        <h1><i class="fa-regular fa-address-card"></i> Employee</h1>
+
+        <div class="date">
+          <input type="date">
+        </div>
+
+        <div class="date">
+          <input type="text" placeholder="Search">
+        </div>
+
+        <!----------START INSIGHTS---------->
+
+         <!---------END OF INSIGHTS---------->
+
+        <div class="recent-orderse">
+
+          <table id="cv_formate">
+
+            <thead>
+              <tr>
+                <td colspan="100%">
+                  <div class="cv_img"> <img src="img/mdsiddiqulislamlabib.jpg" alt=""></div>
+                  <div class="clear"></div>
+                </td>
+              </tr>
+            </thead>
+
+            <tbody>
+              
+
+
+              <!-- Basic info start -->
+              
+              <tr>
+                <td>
+                   Name 
+                </td>
+
+                <td>: <b> Md siddiqul islam labib</b></td>
+              </tr>
+
+              <tr>
+                <td>
+                  Email
+                </td>
+
+                <td>: labibkg@gmail.com</td>
+              </tr>     
+
+              <tr>
+                <td>
+                  Mobile
+                </td>
+
+                <td>: 017******82</td>
+              </tr>
+
+              <tr>
+                <td>
+                  Date Of Birth
+                </td>
+
+                <td>: 25-06-2000</td>
+              </tr>
+
+              <tr>
+                <td>
+                  NID
+                </td>
+
+                <td>: 234-3424-3422</td>
+              </tr>
+
+              <tr>
+                <td>
+                  Gender
+                </td>
+
+                <td>: Male</td>
+              </tr>
+              <!-- Basic info end -->
+
+
+              <!-- Educational Information start -->
+              <tr>
+                <td>
+                  
+                  <div>
+                    <a href="#">Educational Information :</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div  id="">  
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Degree</th>
+                            <th>Board</th>
+                            <th>Subject</th>
+                            <th>Result</th>
+                            <th>Year</th>
+                            <th>Duration</th>
+                            <th>File</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>SSC</td>
+                            <td>Dinajpur</td>
+                            <td>Science</td>
+                            <td>4.05 GPA</td>
+                            <td>2017</td>
+                            <td>1 Year</td>
+                            <td><a href="">show</a></td>
+                          </tr>
+
+                          <tr>
+                            <td>HSC</td>
+                            <td>Dinajpur</td>
+                            <td>Science</td>
+                            <td>4.45 GPA</td>
+                            <td>2019</td>
+                            <td>2 Year</td>
+                            <td><a href="">show</a></td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Educational Information end -->
+
+              <tr>
+                <td>
+                  
+                  <div  class="ed">
+                    <a onclick="personalInfo()">Personal Information<i class="fa-solid fa-arrows-up-down"></i></a>
+
+                  </div>
+
+
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div  id="myDIV_0">  
+                      <table>
+                        <thead>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </thead>
+
+
+                        <tbody>
+                          <tr>
+                            <td>Father Name</td>
+                            <td>: Md Soljar Alli</td>
+                          </tr>
+                          <tr>
+                            <td>Father Mobile</td>
+                            <td>: 017*******8</td>
+                          </tr>
+                          <tr>
+                            <td>Mother Mobile</td>
+                            <td>: 017*******8</td>
+                          </tr>
+
+                          <tr>
+                            <td>Nationality</td>
+                            <td>: Bangladesh</td>
+                          </tr>
+
+                          <tr>
+                            <td>Religion</td>
+                            <td>: Islam</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                  </div>
+                </td>
+                
+              </tr>
+
+              <tr>
+                <td>
+                  
+                  <div class="ed">
+                    <a onclick="presentAdd()">Present Address<i class="fa-solid fa-arrows-up-down"></i></a>
+
+                  </div>
+
+
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div  id="myDIV_1">  
+                      <table>
+                        <thead>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </thead>
+
+
+                        <tbody>
+                          <tr>
+                            <td>Village/House No.Rod No.Area etc</td>
+                            <td>: rangpur-1213, rangpur, Bangladesh </td>
+                          </tr>
+                          <tr>
+                            <td>Post Office</td>
+                            <td>: Panchpir</td>
+                          </tr>
+                          <tr>
+                            <td>Post code</td>
+                            <td>: 5301</td>
+                          </tr>
+
+                          <tr>
+                            <td>Division</td>
+                            <td>: Rangpur</td>
+                          </tr>
+
+                          <tr>
+                            <td>District</td>
+                            <td>: Kurigram</td>
+                          </tr>
+
+                          <tr>
+                            <td>Thana/Police Stations
+                            </td>
+                            <td>: Ulipur</td>
+                          </tr>
+
+
+                        </tbody>
+                      </table>
+                  </div>
+                </td>
+                
+              </tr>
+
+
+
+              <tr>
+                <td>
+                  
+                  <div class="ed">
+                    <a  onclick="extrac()">Extra Curricular Activities <i class="fa-solid fa-arrows-up-down"></i></a>
+
+                  </div>
+
+
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div  id="myDIV_6">  
+                      <table>
+                        <thead>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </thead>
+
+
+                        <tbody>
+                          <tr>
+                            <td>Writing</td>
+                            <td>Singing</td>
+                            <td>Painting</td>
+                            <td>Teamwork</td>
+                          </tr>
+
+
+                        </tbody>
+                      </table>
+                  </div>
+                </td>
+                
+              </tr>
+
+              <tr>
+                <td>
+                  
+                  <div class="ed">
+                    <a  onclick="permanentAdd()">Permanent Address<i class="fa-solid fa-arrows-up-down"></i></a>
+
+                  </div>
+
+
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div  id="myDIV_2">  
+                      <table>
+                        <thead>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </thead>
+
+
+                        <tbody>
+                          <tr>
+                            <td>Village/House No.Rod No.Area etc</td>
+                            <td>: rangpur-1213, rangpur, Bangladesh </td>
+                          </tr>
+                          <tr>
+                            <td>Post Office</td>
+                            <td>: Panchpir</td>
+                          </tr>
+                          <tr>
+                            <td>Post code</td>
+                            <td>: 5301</td>
+                          </tr>
+
+                          <tr>
+                            <td>Division</td>
+                            <td>: Rangpur</td>
+                          </tr>
+
+                          <tr>
+                            <td>District</td>
+                            <td>: Kurigram</td>
+                          </tr>
+
+                          <tr>
+                            <td>Thana/Police Stations
+                            </td>
+                            <td>: Ulipur</td>
+                          </tr>
+
+
+                        </tbody>
+                      </table>
+                  </div>
+                </td>
+                
+              </tr>
+
+
+
+
+              <tr>
+                <td>
+                  
+                  <div class="ed">
+                    <a  onclick="professionalEx()">Professional Experience<i class="fa-solid fa-arrows-up-down"></i></a>
+
+                  </div>
+
+
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div  id="myDIV_3">  
+                      <table>
+                        <thead>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </thead>
+
+
+                        <tbody>
+
+
+                          <tr>
+                            <td>Designation/Post Name</td>
+                            <td>: Programar</td>
+                          </tr>
+
+
+
+                          <tr>
+                            <td>Organization Name</td>
+                            <td>: Ipsita computers pte ltd</td>
+                          </tr>
+
+                          <tr>
+                            <td>Responsibilities</td>
+                            <td>: _______</td>
+                          </tr> 
+
+                          <tr>
+                            <td>Service Start Date</td>
+                            <td>: 01-01-2022</td>
+                          </tr>
+
+                          <tr>
+                            <td>Service End Date</td>
+                            <td>: 12-02-2022</td>
+                          </tr>
+
+
+                          <tr>
+                            <td>Designation</td>
+                            <td>: 1 Year</td>
+                          </tr>
+
+                          <tr>
+                            <td>Total Experience</td>
+                            <td>:________</td>
+                          </tr>
+
+                          <tr>
+                            <td>Last Appointment Letter..</td>
+                            <td>: <a href="">file</a></td>
+                          </tr>
+
+
+
+                        </tbody>
+                      </table>
+                  </div>
+                </td>
+                
+              </tr>
+
+              <tr>
+                <td>
+                  
+                  <div class="ed">
+                    <a  onclick="projectex()">Project Experience<i class="fa-solid fa-arrows-up-down"></i></a>
+
+                  </div>
+
+
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div  id="myDIV_4">  
+                      <table>
+                        <thead>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </thead>
+
+
+                        <tbody>
+                          <tr>
+                            <td>Project Name</td>
+                            <td>: CRM</td>
+                          </tr>
+                          <tr>
+                            <td>Responsibilities</td>
+                            <td>:.........</td>
+                          </tr>
+
+                          <tr>
+                            <td>Project Position</td>
+                            <td>: Developer</td>
+                          </tr>
+
+
+
+                          <tr>
+                            <td>Project Start Date</td>
+                            <td>: 01-01-2022</td>
+                          </tr>
+
+                          <tr>
+                            <td>Project End Date</td>
+                            <td>: 12-02-2022</td>
+                          </tr>
+
+                          <tr>
+                            <td>Project File</td>
+                            <td>: <a href="">file</a></td>
+                          </tr>
+                          
+                          <tr>
+                            <td>Project Discirption</td>
+                            <td>:________</td>
+                          </tr>
+
+
+
+
+                        </tbody>
+                      </table>
+                  </div>
+                </td>
+                
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+        
+    </main>
+    <!-- ----------END OF MANI----------------------->
+
+    <!-- ----------START OF RIGHT----------------------->
+    <div class="right">
+        <!-- START OF TOP -->
+        <div class="top">
+          <button id="menu-btn">
+            <span>
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="them-toggler">
+            <span class="active">
+              <i class="fa-solid fa-lightbulb"></i>
+              </span>
+
+              <span>
+                <i class="fa-solid fa-moon"></i>
+              </span>     
+          </div>
+          
+
+          <div class="profile">
+            <div class="info">
+              <p>Hay, <b>Labib</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+
+            <div class="profile-photo">
+              <img src="./img/mdsiddiqulislamlabib.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- END OF TOP -->
+
+        <!-- START RESEN UPDATE -->
+
+       <!-- END RESEN UPDATE -->
+
+        <div class="sales-analytics">
+
+          <h2>sales Analytics</h2>
+          <div class="item online">
+            <span class="material-icons-sharp icon">
+              real_estate_agent
+              </span>
+
+              <div class="right">
+                <div class="info">
+                  <h3>
+                    Sales Online
+                  </h3>
+                  <small class="text-muted ">
+                    Last 24 Hours
+                  </small>
+    
+                  <h5 class="success">
+                    +39%
+                  </h5>
+                  <h3>8032</h3>
+                </div>
+              </div>
+          </div>
+
+
+
+
+          <div class="item ofline">
+            <span class="material-icons-sharp icon">
+              real_estate_agent
+              </span>
+
+              <div class="right">
+                <div class="info">
+                  <h3>
+                    Sales Ofline
+                  </h3>
+                  <small class="text-muted">
+                    Last 24 Hours
+                  </small>
+    
+                  <h5 class="success">
+                    +69%
+                  </h5>
+                  <h3>81032</h3>
+                </div>
+
+          </div>
+
+          </div>
+
+
+
+        </div>
+        
+    </div>
+    <!-- ----------END OF RIGHT----------------------->
+  </div>  
+</table>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crate Projcet</title>
+
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- MATERIAL ICON -->
+    
+    <!-- onli this page this cass -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquary/jquary.js"></script>
+     <!-- onli this page this cass -->
+
+     
+    <script src="jquary/jquary.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body >
+
+ 
+  
+  <div class="formcolor">
+
+    <div class="alin-cneter">
+        <h1>Create a Projcet</h1>
+        
+    </div>
+    <!-- Personal Information start -->
+    <div class="container-fluid">
+        <form action="" class="customcss">
+          <div class="row ">
+            <div class="col-md-4">
+              <label for="">Projcet Name</label>
+              <input type="text" class="form-control" name="name" placeholder="Projcet Name">
+            </div>
+
+            <div class="col-md-4">
+                <label for="">Number of Employees in Tha Projet</label>
+                <input type="text" class="form-control" name="email" placeholder="Number of Employees">
+            </div>
+
+            <div class="col-md-4">
+                <label for="">Team Leader Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Employee Name">
+              </div>
+      
+              <div class="col-md-4">
+                <label for="">Trial Period</label>
+                <input type="text" class="form-control" name="name" placeholder="How Meny week">
+              </div>
+
+            <div class="col-md-4">
+              <label for="">Start Date</label>
+              <input type="date" class="form-control" name="name">
+            </div>
+            <div class="col-md-4">
+              <label for="">Completion Date</label>
+              <input type="date" class="form-control" name="name">
+            </div>
+            <div class="col-md-4">
+              <label for="">Hand over Date..</label>
+              <input type="date" class="form-control" name="name">
+            </div>
+
+
+            <div class="col-md-4">
+                <label for="">Status</label>
+                <select class="form-select form-control">
+                  <option selected>Choose</option>
+                 <option>Complete</option>
+                  <option>Running</option>
+                </select> 
+              </div>
+
+
+            
+            <div class="col-md-4">
+              <label for="">SRS.. Fil..</label>
+              <input type="file" class="form-control" name="photo" >
+            </div>
+            
+          </div>
+
+          <div class="col-md-4">
+                <p><label for="lol">Technology Used :</label></p>
+                <textarea class="custexar" id="lol" name="" rows="4" cols="50"></textarea>
+              
+          </div>
+
+        </form>
+    </div>
+    <!-- Work Experience start -->
+
+    <div class="alin-cneter">
+      <h1>Maintenance Data Add  </h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-xs-12">
+          <form class="form-main_2 customcss">
+            <div class="form-block_2 row">
+      
+                
+                <div class="form-group col-md-4">
+                  Complain Number
+                <input type="text" name="postName[]" class="form-control" placeholder="Complain No">
+                </div>
+      
+      
+      
+
+      
+      
+                <div class="form-group col-md-4">
+                  Client
+                <input type="text" name="respons[]" class="form-control" placeholder="Responsibilities">
+                </div>
+      
+      
+      
+      
+                <div class="form-group col-md-4">
+                 Support Engr. 
+                  <input type="text" name="endate[]" class="form-control" placeholder="Name">
+                </div>
+      
+      
+                <div class="form-group col-md-4">
+                 Remark
+                <input type="text" name="duration[]" class="form-control"  placeholder="Remark Name">
+                </div>
+
+                <div class="form-group col-md-4">
+                    Complain Date
+                    <input type="date" name="OrgName[]" class="form-control">
+                </div>
+
+                <div class="form-group col-md-4">
+                    Date problem Fix
+                  <input type="date" name="totalex[]" class="form-control">
+                  </div>
+                
+            </div>
+          </form>    
+          
+          <div class="flot-con">
+            <a class="add-more-btn_2 button_3">Add More Project</a>
+          </div>
+
+        </div>
+      </div>
+    </div> 
+
+    <script>
+          $('.add-more-btn_2').click(function() {
+            var clone = $('.add_2').clone('.form-block_2');
+            $('.form-main_2').append(clone);
+
+            $(".form-main_2 .add_2").removeClass('add_2').addClass("form-block_2");
+            });
+    </script>
+      
+    <div class="clonediv">
+      <div class="add_2">
+        <div class="form-block_2 row">
+      
+                
+            <div class="form-group col-md-4">
+              Complain Number
+            <input type="text" name="postName[]" class="form-control" placeholder="Complain No">
+            </div>
+  
+  
+  
+
+  
+  
+            <div class="form-group col-md-4">
+              Client
+            <input type="text" name="respons[]" class="form-control" placeholder="Responsibilities">
+            </div>
+  
+  
+  
+  
+            <div class="form-group col-md-4">
+             Support Engr. 
+              <input type="text" name="endate[]" class="form-control" placeholder="Name">
+            </div>
+  
+  
+            <div class="form-group col-md-4">
+             Remark
+            <input type="text" name="duration[]" class="form-control"  placeholder="Remark Name">
+            </div>
+
+            <div class="form-group col-md-4">
+                Complain Date
+                <input type="date" name="OrgName[]" class="form-control">
+            </div>
+
+            <div class="form-group col-md-4">
+                Date problem Fix
+              <input type="date" name="totalex[]" class="form-control">
+              </div>
+            
+        </div>
+
+
+        
+      </div>
+
+      
+    </div>
+
+
+    
+    <!-- Work Experience end -->
+
+    
+
+    <div class="btcontorl">
+        <a href="oure_project_list.html"> <button class="button_3">Submit</button></a> 
+    </div>
+
+  </div>
+
+
+  <footer class="height">
+    @2022 ipsita computers pte ltd..
+  </footer>
+  <script src="js/index.js"></script>
+
+
+ 
+
+</body>
+</html>

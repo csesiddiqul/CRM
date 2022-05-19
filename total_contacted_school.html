@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Information</title>
+
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- MATERIAL ICON -->
+
+    <script src="jquary/jquary.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="myLoad()">
+
+  <div id="loading"></div>
+  <div class="container">
+
+    <!---------------ASIDE STRAT----------------------->
+    <aside>
+            <div class="top">
+              <div class="logo">
+                  <img src="./img/ipcl.png" alt="">
+              </div>
+              <div class="close" id="close-btn">
+                  <span class="material-icons-sharp">
+                    close
+                  </span>
+              </div>
+            </div>
+
+              <div class="sidebar">
+
+
+
+                <a href="index.html">
+                  <span class="">
+                    <i class="fa-solid fa-house-user"></i>
+                  </span>
+      
+                  <h3>Dashboard</h3>
+                </a>
+
+                <a href="applications.html">
+                  <span class="">
+                    <i class="fa-solid fa-user-check"></i>
+                  </span>
+                 <h3>Select Employee</h3>
+
+                 </a>
+                  
+                 <a href="employees_list.html">
+                  <span class="">
+                    <i class="fa-solid fa-id-card"></i>
+                  </span>
+                  <h3>Human Resources</h3>
+                </a>
+      
+
+
+                <a href="#" class="active" >
+                  <span class="">
+                    <i class="fa-solid fa-school"></i>
+                  </span>
+
+                  <h3>School Data</h3>
+                </a>
+                <a href="oure_project_list.html">
+                  <span class="">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </span>
+                    <h3>Oure Project</h3>
+        
+                 </a>
+
+
+
+                 <a href="#" target="_blank">
+                  <span class="">
+                    <i class="fa-regular fa-credit-card"></i>
+                  </span>
+     
+                  <h3>Financial System</h3>
+                </a>
+
+                <a href="#">
+                  <span class="material-icons-sharp">
+                    settings
+                  </span>
+
+                  <h3>Setting</h3>
+                </a>
+
+
+                <a href="#">
+                  <span class="material-icons-sharp">
+                    power_settings_new
+                    </span>
+
+                  <h3> Log Out</h3>
+                </a>
+              </div>
+    </aside>
+    <!---------------ASIDE END----------------------->
+
+    <!-- ----------START OF MANI----------------------->
+    <main>
+
+        <h1> <i class="fa-solid fa-school-circle-check"></i>   Total Contacted School </h1>
+
+
+
+
+        <div class="date">
+          <input type="date">
+        </div>
+
+        <div class="date">
+          <input type="text" placeholder="Search">
+        </div>
+
+        <!----------START INSIGHTS---------->
+
+         <!---------END OF INSIGHTS---------->
+
+
+
+
+        <diV class="recent-orders">
+
+          <h2>Search School</h2>
+
+
+          <div class="total_school">
+            <form action="#">
+                <select class="date" name="division" id="location">
+                <optgroup label="Division">
+                    <option value="dhaka">_Select Division_</option>
+                    <option value="dhaka">Dhaka</option>
+                    <option value="khulna">Khulna</option>
+                    <option value="rajshahi">Rajshahi</option>
+                    <option value="rangpur">Rangpur</option>
+                    <option value="sylhet">Sylhet </option>
+                    <option value="barishal">Barishal</option>
+                    <option value="chattogram">Chattogram</option>
+                    
+                </optgroup>
+                </select>
+
+
+
+
+                <select class="date" name="district" id="location">
+                  <optgroup label="District">
+                    <option value="dhaka">_Select District_</option>
+                    <option value="dhaka">Dhaka</option>
+                    <option value="khulna">Gazipur</option>
+                    <option value="rajshahi">Narsingdi</option>
+                    <option value="rangpur">Manikganj</option>
+                    <option value="sylhet">Mymensingh</option>
+                    <option value="barishal">Sherpur</option>
+                    <option value="chattogram">Jamalpur</option>
+                    <option value="chattogram">Netrokona</option>
+                    <option value="chattogram">Kishoreganj</option>
+                    <option value="chattogram">Tangail</option>
+                    <option value="chattogram">Faridpur</option>
+                    <option value="chattogram">Maradipur</option>
+                    <option value="chattogram">Shariatpur</option>
+                    <option value="chattogram">Rajbari</option>
+                    <option value="chattogram">Gopalganj</option>
+                  </optgroup>
+                  </select>
+
+
+
+                  <select class="date" name="thana" id="location">
+                    <optgroup label="Thana">
+
+                        <option value="dhaka">_Select Thana_</option>
+                        <option value="gazipur_sodor">Gazipur Sadar Upazila</option>
+                        <option value="kaliakair">Kaliakair Upazila</option>
+                        <option value="kapasia">Kapasia Upazila</option>
+                        <option value="sreepur">Sreepur Upazila</option>
+                        <option value="kaliganj">Kaliganj Upazila</option>
+                    </optgroup>
+                    </select>
+
+                    
+
+                    <select class="date" name="location" id="location">
+                      <optgroup label="Post">
+                        <option value="dhaka">_Select Post_</option>
+                        <option value="kaliakaar">Kaliakaar</option>
+                        <option value="kaliakaar"> Kaliakaar</option>
+                      </optgroup>
+                      </select>
+
+
+                      
+                    <select class="date" name="location" id="location">
+                        <optgroup label="Division">
+                          <option value="location">Location</option>
+                        </optgroup>
+                     </select>
+
+                  <input class="button_2" type="submit" value="Search">
+            </form>
+
+        </div>
+
+        <h2>View Results</h2>
+
+          <table id="customers" >
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>contact</th>
+                <th>Source</th>
+                <th>Date</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+
+
+            <tbody>
+                <tr>
+                    <td>BBC SCHOLL </td>
+                    <td>Division, District, Thana,
+                      Post office, Location
+                      </td>
+                    <td>
+                      Face book/Messenger
+                    </td>
+
+
+                    <td>Mila (Digital Marketing Executive)</td>
+
+                    <td>3/3/2022</td>
+                    <td class="danger">Not interested</td>
+                </tr>
+
+
+                <tr>
+                  <td>ABC SCHOLL </td>
+                  <td>Division, District, Thana,
+                    Post office, Location
+                    </td>
+                  <td>
+                    Face book/Messenger
+                  </td>
+
+
+                  <td>Mila (Digital Marketing Executive)</td>
+
+                  <td>3/3/2022</td>
+                  <td class="success">interested</td>
+              </tr>
+
+
+              <tr>
+                <td>ABC SCHOLL </td>
+                <td>Division, District, Thana,
+                  Post office, Location
+                  </td>
+                <td>
+                  Face book/Messenger
+                </td>
+
+
+                <td>Mila (Digital Marketing Executive)</td>
+
+                <td>3/3/2022</td>
+                <td class="warning">Interested but later</td>
+            </tr>
+
+            </tbody>
+          </table>
+
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+
+          <div class="clear"></div>
+
+          
+    </main>
+    <!-- ----------END OF MANI--------- -->
+
+    <!-- ----------START OF RIGHT----------------------->
+    <div class="right">
+      <!-- START OF TOP -->
+      <div class="top">
+        <button id="menu-btn">
+          <span>
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="them-toggler">
+          <span class="active">
+            <i class="fa-solid fa-lightbulb"></i>
+            </span>
+
+            <span>
+              <i class="fa-solid fa-moon"></i>
+            </span>     
+        </div>
+        
+
+        <div class="profile">
+          <div class="info">
+            <p>Hay, <b>Labib</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+
+          <div class="profile-photo">
+            <img src="./img/mdsiddiqulislamlabib.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- END OF TOP -->
+
+      <!-- START RESEN UPDATE -->
+
+     <!-- END RESEN UPDATE -->
+
+      <div class="sales-analytics">
+
+        <h2>sales Analytics</h2>
+        <div class="item online">
+          <span class="material-icons-sharp icon">
+            real_estate_agent
+            </span>
+
+            <div class="right">
+              <div class="info">
+                <h3>
+                  Sales Online
+                </h3>
+                <small class="text-muted ">
+                  Last 24 Hours
+                </small>
+  
+                <h5 class="success">
+                  +39%
+                </h5>
+                <h3>8032</h3>
+              </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="item ofline">
+          <span class="material-icons-sharp icon">
+            real_estate_agent
+            </span>
+
+            <div class="right">
+              <div class="info">
+                <h3>
+                  Sales Ofline
+                </h3>
+                <small class="text-muted">
+                  Last 24 Hours
+                </small>
+  
+                <h5 class="success">
+                  +69%
+                </h5>
+                <h3>81032</h3>
+              </div>
+
+        </div>
+
+        </div>
+
+
+
+      </div>
+      
+  </div>
+    <!-- ----------START OF RIGHT----------------------->
+
+  </div>  
+
+
+</table>
+
+
+
+<script src="js/index.js"></script>
+</body>
+</html>

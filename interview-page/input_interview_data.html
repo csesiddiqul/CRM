@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- MATERIAL ICON -->
+    
+    <!-- onli this page this cass -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../jquary/jquary.js"></script>
+     <!-- onli this page this cass -->
+
+    <script src="jquary/jquary.js"></script>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Create Interview Page</title>
+</head>
+<body >
+
+ 
+  
+  <div class="formcolor">
+
+
+
+
+    <div class="alin-cneter">
+      <h1>Create Interview Page</h1>
+      
+    </div>
+
+    <!-- Interview Information start -->
+    <div class="container-fluid">
+          <div class="row">
+          <div class="col-xs-12">
+            <form class="form-main customcss">
+
+              <div class="form-block row">
+
+                <h3>
+                  <b>Add Interviewer :</b>
+                </h3>
+ 
+                <div class="col-md-12">
+                    <label for="">Interviewer Name :</label>
+                    <input type="text" class="form-control" name="name" placeholder="Full Name">
+                </div>
+
+                <div class="col-md-12">
+                    <label for="">Interviewer Name :</label>
+                    <input type="text" class="form-control" name="name" placeholder="Full Name">
+                </div>
+
+                <div class="col-md-12">
+                    <label for="">Interviewer Name :</label>
+                    <input type="text" class="form-control" name="name" placeholder="Full Name">
+                </div>
+
+              </div>
+
+            </form>    
+            
+            <div class="flot-con">
+              <a class="add-more-btn button_3">Add More Interviewer</a>
+            </div>
+
+          </div>
+        </div>
+    </div> 
+
+
+    <script>
+          $('.add-more-btn').click(function() {
+            var clone = $('.add').clone('.form-block');
+            $('.form-main').append(clone);
+
+            $(".form-main .add").removeClass('add').addClass("form-block");
+            });
+    </script>
+      
+    <div class="clonediv">
+      <div class="add">
+        <div class="form-block">       
+              <div class="form-block row">
+
+ 
+                <div class="col-md-12">
+                    <label for="">Interviewer Name :</label>
+                    <input type="text" class="form-control" name="name" placeholder="Full Name">
+                </div>
+
+              </div>
+
+         
+        </div>
+      </div>   
+    </div>
+    <!-- Interview Information End-->
+
+
+    <!-- Work Experience start -->
+
+  
+    
+    <!-- Work Experience end -->
+
+    
+
+    <div class="btcontorl">
+      <button class="button_3">Submit</button>
+    </div>
+
+  </div>
+
+
+  <footer class="height">
+    @2022 ipsita computers pte ltd..
+  </footer>
+  <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- MATERIAL ICON -->
+    
+    <script src="jquary/jquary.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="myLoad()">
+
+  <div id="loading"></div>
+  <div class="container">
+
+    <!---------------ASIDE STRAT----------------------->
+    <aside>
+      <div class="top">
+        <div class="logo">
+            <img src="./img/ipcl.png" alt="">
+        </div>
+        <div class="close" id="close-btn">
+                  <span class="material-icons-sharp">
+                    <i class="fa-solid fa-xmark"></i>
+                  </span>
+        </div>
+      </div>
+
+        <div class="sidebar">
+
+
+          <a href="employee_profile.html">
+            <span class="">
+              <i class="fa-solid fa-circle-user"></i>
+            </span>
+
+            <h3>My Profile</h3>
+          </a>
+
+          <a href="work_information.html">
+                  <span class="">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </span>
+              <h3>Work information</h3>
+        
+           </a>
+        
+        
+        <div class="sub" id="myDIV">  
+            <ul>  
+              <li><a href="applications.html" >Applications</a></li>
+              <li><a href="application_short_list.html" >Application Short List</a></li>
+              <li><a href="#" class="active_2"  >CV</a></li>
+              <li><a href="interview_process.html" >Interview Process</a></li>
+            </ul>
+        </div>
+            
+
+          <a href="#" class="active">
+            <span class="">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+
+            <h3>Message</h3>
+
+            <span class="message-count">12</span>
+
+            </a>
+
+
+
+                <a href="#" target="_blank">
+                  <span class="">
+                    <i class="fa-regular fa-credit-card"></i>
+                  </span>
+
+                  <h3>Financial System</h3>
+                </a>
+
+          <a href="#">
+            <span class="material-icons-sharp">
+              settings
+            </span>
+
+            <h3>Setting</h3>
+          </a>
+
+
+          <a href="index.html">
+            <span class="">
+             <i class="fa-solid fa-power-off"></i>
+              </span>
+
+            <h3>Log out </h3>
+          </a>
+        </div>
+    </aside>
+    <!---------------ASIDE END----------------------->
+
+    <!-- ----------START OF MANI----------------------->
+    <main>
+
+      
+        <h1><i class="fa-solid fa-briefcase"></i> Work Information</h1>
+
+        <div class="date">
+          <input type="date">
+        </div>
+
+        <div class="date">
+          <input type="text" placeholder="Search">
+        </div>
+
+        <!----------START INSIGHTS---------->
+
+         <!---------END OF INSIGHTS---------->
+
+
+
+
+        <div class="recent-orders">
+
+          <table id="customers">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Project Name </th>
+                <th>Start Time</th>
+                <th>Project View</th>
+              </tr>
+            </thead>
+
+
+            <tbody>
+              <tr>
+                <td>0111</td>
+                <td>ABCC</td>
+                <td>12-02-2022</td>
+                <td><a href="project_view_employee.html"><i class="fa-solid fa-eye"></i></a></td>
+              </tr>
+
+              <tr>
+                <td>0112</td>
+                <td>ABCC</td>
+                <td>12-02-2022</td>
+
+                <td><a href="#"><i class="fa-solid fa-eye"></i></a></td>
+              </tr>
+              
+            </tbody>
+          </table>
+
+
+
+
+          <script type="text/javascript">
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $(".click").hide(1000);
+                });
+                $(".show").click(function(){
+                    $(".click").show(2000);
+                });
+            });
+        </script>
+        
+        <div class="itcon">
+          <div class="con">
+            <div class="hddive click">
+               <div class="">
+                <a href="#" class="textclose" id="hide" data-bs-toggle="tooltip"  title="Close"><i class="fa-solid fa-square-xmark"></i></a>
+               </div>
+    
+    
+               <div class="clear"></div>
+    
+                <p class="hidetext">
+                  Hi Labib You Done This Work In This Project..
+                </p>
+    
+    
+            </div>
+           </div>
+        </div>
+
+        </div>
+
+
+
+
+
+  
+        
+    </main>
+    <!-- ----------END OF MANI----------------------->
+
+    <!-- ----------START OF RIGHT----------------------->
+    <div class="right">
+
+
+
+
+        <!-- START OF TOP -->
+        <div class="top">
+          <button id="menu-btn">
+            <span>
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="them-toggler">
+            <span class="active">
+              <i class="fa-solid fa-lightbulb"></i>
+              </span>
+
+              <span>
+                <i class="fa-solid fa-moon"></i>
+              </span>     
+          </div>
+          
+
+          <div class="profile">
+            <div class="info">
+              <p>Hay, <b>Labib</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+
+            <div class="profile-photo">
+              <img src="./img/mdsiddiqulislamlabib.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- END OF TOP -->
+
+        <!-- START RESEN UPDATE -->
+
+       <!-- END RESEN UPDATE -->
+
+
+
+
+        <div class="sales-analytics">
+
+          <h2>sales Analytics</h2>
+          <div class="item online">
+            <span class="material-icons-sharp icon">
+              real_estate_agent
+              </span>
+
+              <div class="right">
+                <div class="info">
+                  <h3>
+                    Sales Online
+                  </h3>
+                  <small class="text-muted ">
+                    Last 24 Hours
+                  </small>
+    
+                  <h5 class="success">
+                    +39%
+                  </h5>
+                  <h3>8032</h3>
+                </div>
+              </div>
+          </div>
+
+
+
+
+          <div class="item ofline">
+            <span class="material-icons-sharp icon">
+              real_estate_agent
+              </span>
+
+              <div class="right">
+                <div class="info">
+                  <h3>
+                    Sales Ofline
+                  </h3>
+                  <small class="text-muted">
+                    Last 24 Hours
+                  </small>
+    
+                  <h5 class="success">
+                    +69%
+                  </h5>
+                  <h3>81032</h3>
+                </div>
+
+          </div>
+
+          </div>
+
+
+
+        </div>
+        
+    </div>
+    <!-- ----------END OF RIGHT----------------------->
+  </div>  
+</table>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

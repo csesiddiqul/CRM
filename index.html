@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- MATERIAL ICON -->
+
+    
+    <script src="jquary/jquary.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="myLoad()">
+
+  <div id="loading"></div>
+
+
+  <div class="container">
+
+    <!---------------ASIDE STRAT----------------------->
+    <aside>
+            <div class="top">
+              <div class="logo">
+                  <img src="./img/ipcl.png" alt="">
+              </div>
+              <div class="close" id="close-btn">
+                  <span class="material-icons-sharp">
+                    <i class="fa-solid fa-xmark"></i>
+                  </span>
+              </div>
+            </div>
+
+              <div class="sidebar">
+
+
+
+                <a href="#" class="active" >
+                  <span class="">
+                    <i class="fa-solid fa-house-user"></i>
+                  </span>
+      
+                  <h3>Dashboard</h3>
+                </a>
+
+                <a href="applications.html">
+                  <span class="">
+                    <i class="fa-solid fa-user-check"></i>
+                  </span>
+                  <h3>Select Employee</h3>
+
+                 </a>
+                  
+                 <a href="employees_list.html">
+                  <span class="">
+                    <i class="fa-solid fa-id-card"></i>
+                  </span>
+                  <h3>Human Resources</h3>
+                </a>
+      
+
+
+                <a href="total_contacted_school.html">
+                  <span class="">
+                    <i class="fa-solid fa-school"></i>
+                  </span>
+
+                  <h3>School Data</h3>
+                </a>
+
+                <a href="oure_project_list.html">
+                  <span class="">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </span>
+                    <h3>Oure Project</h3>
+        
+                 </a>
+
+                <a href="#" target="_blank">
+                  <span class="">
+                    <i class="fa-regular fa-credit-card"></i>
+                  </span>
+
+                  <h3>Financial System</h3>
+                </a>
+
+                <a href="#">
+                  <span class="">
+                    <i class="fa-solid fa-gear"></i>
+                  </span>
+
+                  <h3>Setting</h3>
+                </a>
+
+
+                <a href="#">
+                  <span class="">
+                    <i class="fa-solid fa-power-off"></i>
+                    </span>
+
+                  <h3> Log Out</h3>
+                </a>
+              </div>
+    </aside>
+    <!---------------ASIDE END----------------------->
+
+    <!-- ----------START OF MANI----------------------->
+      <main>
+        <h1><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+          <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        </svg>Dashboard</h1>
+
+        <div class="date">
+          <input type="date">
+        </div>
+
+
+        <div class="date">
+          <input type="text" placeholder="Search">
+        </div>
+
+        <!----------START INSIGHTS---------->
+        <div class="insights">
+
+          <!----------TOTAL SCHOLL START---------->
+          <div class="school">
+                  <span class="">
+                    <i class="fa-solid fa-school"></i>
+                  </span>
+            <div class="middle">
+              <div class="lef">
+                <h3>Total School.</h3>
+                <h1>25024</h1>
+              </div>
+
+              <div class="progress">
+                <svg>
+                  <circle cx ='38' cy='38' r='36'></circle>
+                </svg>
+
+                <div class="number">
+                  <p>81%</p>
+                </div>
+
+              </div>
+            </div>
+
+            <small class="text-muted">
+              Last 24 Hours
+            </small>
+
+          </div>
+
+          <!----------TOTAL SCHOLL END---------->
+
+
+          <!----------TOTAL SCHOLL CONTACTED START---------->
+          <div class="contacted_school">
+            <span class="">
+              <i class="fa-solid fa-school-circle-check"></i>
+            </span>
+            <div class="middle">
+              <div class="lef">
+                <h3>Contacted School</h3>
+                <h1>5024</h1>
+              </div>
+
+              <div class="progress">
+                <svg>
+                  <circle cx ='38' cy='38' r='36'></circle>
+                </svg>
+
+                <div class="number">
+                  <p>70%</p>
+                </div>
+
+              </div>
+            </div>
+
+            <small class="text-muted">
+              Last 24 Hours
+            </small>
+
+          </div>
+
+          <!----------TOTAL SCHOOL CONTACTED END--------->
+
+          
+        </div>
+         <!---------END OF INSIGHTS---------->
+
+
+
+        <!---------END OF INSIGHTS TOW START---------->
+         <div class="insights">
+
+          
+          <!----------Total School Visited START---------->
+          <div class="school_visited">
+            <span class="">
+              <i class="fa-solid fa-eye"></i>
+              </span>
+            <div class="middle">
+              <div class="lef">
+                <h3>Visited School </h3>
+                <h1>8024</h1>
+              </div>
+
+              <div class="progress">
+                <svg>
+                  <circle cx ='38' cy='38' r='36'></circle>
+                </svg>
+
+                <div class="number">
+                  <p>85%</p>
+                </div>
+
+              </div>
+            </div>
+
+            <small class="text-muted">
+              Last 24 Hours
+            </small>
+
+          </div>
+          <!----------Total School Visited END--------->
+
+
+                    <!----------Total School Visited START---------->
+                    <div class="steatus">
+                      <span class="">
+                        <i class="fa-solid fa-chart-line"></i>
+                        </span>
+                      <div class="middle">
+                        <div class="lef">
+                          <h3>Status</h3>
+                          <h1>8024</h1>
+                        </div>
+          
+                        <div class="progress">
+                          <svg>
+                            <circle cx ='38' cy='38' r='36'></circle>
+                          </svg>
+          
+                          <div class="number">
+                            <p>60%</p>
+                          </div>
+          
+                        </div>
+                      </div>
+          
+                      <small class="text-muted">
+                        Last 24 Hours
+                      </small>
+          
+                    </div>
+                    <!----------Total School Visited END--------->
+
+
+        </div>
+
+        <!---------END OF INSIGHTS TOW END---------->
+
+
+
+
+      </main>
+    <!-- ----------END OF MANI--------- -->
+
+    <!-- ----------START OF RIGHT----------------------->
+    <div class="right">
+        <!-- START OF TOP -->
+        <div class="top">
+          <button id="menu-btn">
+            <span>
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="them-toggler">
+            <span class="active">
+              <i class="fa-solid fa-lightbulb"></i>
+              </span>
+
+              <span>
+                <i class="fa-solid fa-moon"></i>
+              </span>     
+          </div>
+          
+
+          <div class="profile">
+            <div class="info">
+              <p>Hay, <b>Labib</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+
+            <div class="profile-photo">
+              <img src="./img/mdsiddiqulislamlabib.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- END OF TOP -->
+
+        <!-- START RESEN UPDATE -->
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./img/boy.jpeg" alt="">
+              </div>
+
+              <div class="message">
+                <p><b>Anater name</b> receive his message</p>
+                <small class="text-muted">active</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./img/boy.jpeg" alt="">
+              </div>
+
+              <div class="message">
+                <p><b>Anater name</b> receive his message</p>
+                <small class="text-muted">1hor age</small>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+       <!-- END RESEN UPDATE -->
+
+        <div class="sales-analytics">
+
+          <h2>sales Analytics</h2>
+          <div class="item online">
+            <span class=" icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              </span>
+
+              <div class="right">
+                <div class="info">
+                  <h3>
+                    Sales Online
+                  </h3>
+                  <small class="text-muted ">
+                    Last 24 Hours
+                  </small>
+    
+                  <h5 class="success">
+                    +39%
+                  </h5>
+                  <h3>8032</h3>
+                </div>
+              </div>
+          </div>
+
+
+
+
+          <div class="item ofline">
+            <span class=" icon">
+              <i class="fa-solid fa-bag-shopping"></i>
+              </span>
+
+              <div class="right">
+                <div class="info">
+                  <h3>
+                    Sales Ofline
+                  </h3>
+                  <small class="text-muted">
+                    Last 24 Hours
+                  </small>
+    
+                  <h5 class="success">
+                    +69%
+                  </h5>
+                  <h3>81032</h3>
+                </div>
+
+          </div>
+
+          </div>
+
+
+          
+
+
+
+
+
+
+
+
+
+        </div>
+        
+    </div>
+    <!-- ----------START OF RIGHT----------------------->
+
+  </div>  
+
+
+</table>
+
+
+
+<script src="js/index.js"></script>
+</body>
+</html>

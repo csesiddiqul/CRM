@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Process</title>
+
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- MATERIAL ICON -->
+    <script src="jquary/jquary.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="myLoad()">
+
+  <div id="loading"></div>
+  <div class="container">
+
+    <!---------------ASIDE STRAT----------------------->
+    <aside>
+      <div class="top">
+        <div class="logo">
+            <img src="./img/ipcl.png" alt="">
+        </div>
+        <div class="close" id="close-btn">
+                  <span class="material-icons-sharp">
+                    <i class="fa-solid fa-xmark"></i>
+                  </span>
+        </div>
+      </div>
+
+        <div class="sidebar">
+
+
+          <a href="index.html" >
+            <span class="">
+              <i class="fa-solid fa-house-user"></i>
+            </span>
+
+            <h3>Dashboard</h3>
+          </a>
+
+          <a href="#" class="active" onclick="myFunction()">
+                  <span class="">
+                        <i class="fa-solid fa-user-check"></i>
+                  </span>
+             <h3>Select Employee</h3>
+           </a>
+        
+        
+        <div class="sub" id="myDIV">  
+            <ul>  
+              <li><a href="applications.html" >Applications View</a></li>
+              <li><a href="application_short_list.html" >Application Short List</a></li>
+              <li><a href="show_cv.html" >CV</a></li>
+              <li><a href="#" class="active_2">Interview Process</a></li>
+            </ul>
+        </div>
+        
+            
+        <a href="employees_list.html"  onclick="humanRe()" >
+          <span class="">
+            <i class="fa-solid fa-id-card"></i>
+          </span>
+          <h3> Human Resources</h3>
+        </a>
+
+
+
+      
+      <div class="sub" id="human">  
+          <ul>
+              <li><a href="#" class="active_2" >Employees</a></li>
+              <li><a href="attendance.html" >Attendance</a></li>
+              <li><a href="distribute_job.html">Job Distribution</a></li>
+              
+          </ul>
+      </div>
+
+          <a href="total_contacted_school.html">
+                  <span class="">
+                    <i class="fa-solid fa-school"></i>
+                  </span>
+
+                  <h3>School Data</h3>
+          </a>
+
+          <a href="oure_project_list.html">
+            <span class="">
+              <i class="fa-solid fa-briefcase"></i>
+            </span>
+              <h3>Oure Project</h3>
+  
+           </a>
+
+                <a href="#" target="_blank">
+                  <span class="">
+                    <i class="fa-regular fa-credit-card"></i>
+                  </span>
+
+                  <h3>Financial System</h3>
+                </a>
+
+          <a href="#">
+            <span class="material-icons-sharp">
+              settings
+            </span>
+
+            <h3>Setting</h3>
+          </a>
+
+
+          <a href="#">
+            <span class="material-icons-sharp">
+              power_settings_new
+              </span>
+
+            <h3> Log Out</h3>
+          </a>
+        </div>
+    </aside>
+    <!---------------ASIDE END----------------------->
+
+    <!-- ----------START OF MANI----------------------->
+    <main>
+        <h1><i class="fa-solid fa-person-walking-arrow-right"></i> Interview Process</h1>
+
+        <div class="date">
+          <input type="date">
+        </div>
+
+        <div class="date">
+          <input type="text" placeholder="Search">
+        </div>
+
+        <!----------START INSIGHTS---------->
+
+         <!---------END OF INSIGHTS---------->
+
+
+
+
+        <div class="recent-orders">
+
+
+          <table id="customers">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone No</th>
+                <th>CV</th>
+                <th>Marks</th>
+
+                <th>Status</th>
+              </tr>
+            </thead>
+
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>A</td>
+                <td><a href="#"><a href="#">a@gmail.com</a></a></td>
+                <td>01850236598</td>
+                <td><a href="show_cv.html">File</a></td>
+                <td><p>90%</p></td>
+
+                <td>
+                    <a href="#" data-bs-toggle="tooltip"  title="Reject"><i class="fa-solid fa-user-xmark"></i></a>
+                    <a href="#" data-bs-toggle="tooltip"  title="Approve"><i class="fa-solid fa-check"></i></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>C</td>
+                <td><a href="#"><a href="#">a@gmail.com</a></a></td>
+                <td>01850236598</td>
+                <td><a href="show_cv.html">File</a></td>
+                <td>      
+                    <p>60%</p>
+                </td>
+                <td>
+                    <a href="#" data-bs-toggle="tooltip"  title="Reject"><i class="fa-solid fa-user-xmark"></i></a>
+                    <a href="#" data-bs-toggle="tooltip"  title="Approve"><i class="fa-solid fa-check"></i></a>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>4</td>
+                <td>D</td>
+                <td><a href="#"><a href="#">a@gmail.com</a></a></td>
+                <td>01850236598</td>
+                <td><a href="show_cv.html">File</a></td>
+                <td>      
+                    <p>60%</p>
+                </td>
+                <td>
+                    <a href="#" data-bs-toggle="tooltip"  title="Reject"><i class="fa-solid fa-user-xmark"></i></a>
+                    <a href="#" data-bs-toggle="tooltip"  title="Approve"><i class="fa-solid fa-check"></i></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>E</td>
+                <td><a href="#"><a href="#">a@gmail.com</a></a></td>
+                <td>01850236598</td>
+                <td><a href="show_cv.html">File</a></td>
+                <td>      
+                    <p>60%</p>
+                </td>
+                <td>
+                    <a href="#" data-bs-toggle="tooltip"  title="Reject"><i class="fa-solid fa-user-xmark"></i></a>
+                    <a href="#" data-bs-toggle="tooltip"  title="Approve"><i class="fa-solid fa-check"></i></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>E</td>
+                <td><a href="#"><a href="#">a@gmail.com</a></a></td>
+                <td>01850236598</td>
+                <td><a href="show_cv.html">File</a></td>
+                <td>      
+                    <p>60%</p>
+                </td>
+                <td>
+                    <a href="#" data-bs-toggle="tooltip"  title="Reject"><i class="fa-solid fa-user-xmark"></i></a>
+                    <a href="#" data-bs-toggle="tooltip"  title="Approve"><i class="fa-solid fa-check"></i></a>
+                </td>
+              </tr>
+
+
+
+
+            </tbody>
+          </table>
+
+            <div class="dwonload">
+                <button class="button_2">Download</button>
+            </div>
+            <div class="clear"></div>
+
+          
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+
+          <div class="clear"></div>
+
+
+        </div>
+        
+    </main>
+    <!-- ----------END OF MANI----------------------->
+
+    <!-- ----------START OF RIGHT----------------------->
+    <div class="right">
+        <!-- START OF TOP -->
+        <div class="top">
+          <button id="menu-btn">
+            <span>
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="them-toggler">
+            <span class="active">
+              <i class="fa-solid fa-lightbulb"></i>
+              </span>
+
+              <span>
+                <i class="fa-solid fa-moon"></i>
+              </span>     
+          </div>
+          
+
+          <div class="profile">
+            <div class="info">
+              <p>Hay, <b>Labib</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+
+            <div class="profile-photo">
+              <img src="./img/mdsiddiqulislamlabib.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- END OF TOP -->
+
+
+
+        <div class="sales-analytics">
+
+          <h2>sales Analytics</h2>
+          <div class="item online">
+            <span class="material-icons-sharp icon">
+              real_estate_agent
+              </span>
+
+              <div class="right">
+                <div class="info">
+                  <h3>
+                    Sales Online
+                  </h3>
+                  <small class="text-muted ">
+                    Last 24 Hours
+                  </small>
+    
+                  <h5 class="success">
+                    +39%
+                  </h5>
+                  <h3>8032</h3>
+                </div>
+              </div>
+          </div>
+
+
+
+
+          <div class="item ofline">
+            <span class="material-icons-sharp icon">
+              real_estate_agent
+              </span>
+
+              <div class="right">
+                <div class="info">
+                  <h3>
+                    Sales Ofline
+                  </h3>
+                  <small class="text-muted">
+                    Last 24 Hours
+                  </small>
+    
+                  <h5 class="success">
+                    +69%
+                  </h5>
+                  <h3>81032</h3>
+                </div>
+
+          </div>
+
+          </div>
+
+
+
+        </div>
+        
+    </div>
+    <!-- ----------END OF RIGHT----------------------->
+  </div>  
+</table>
+
+<script src="js/index.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    myFunction()
+  });
+</script>
+
+</body>
+</html>

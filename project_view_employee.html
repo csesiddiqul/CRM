@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Viwe Employee</title>
+
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- MATERIAL ICON -->
+    
+    <script src="jquary/jquary.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="myLoad()">
+
+
+<script>
+  $(function() {
+  //----- OPEN
+  $('[data-popup-open]').on('click', function(e)  {
+      var targeted_popup_class = jQuery(this).attr('data-popup-open');
+      $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+
+      e.preventDefault();
+  });
+
+  //----- CLOSE
+  $('[data-popup-close]').on('click', function(e)  {
+      var targeted_popup_class = jQuery(this).attr('data-popup-close');
+      $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+      e.preventDefault();
+  });
+});
+</script>
+
+
+  <div class="popup" data-popup="popup-1">
+      <div class="popup-inner">
+
+
+
+            <div class="container-fluid">
+              <div class="row">
+              <div class="col-xs-12">
+                <form class="form-main_3 ">
+                  <div class="form-block_3 row">
+                    <h1 class="itcon"><i class="fa-solid fa-square-rss"></i> CRM</h1>
+      
+                    <table class="emwidth" id="">
+                      <thead>
+                        <tr>
+                          <th>Dane Date</th>
+                          <th>Work in Parsent</th>
+                          <th>Work Condition</th>
+                        </tr>
+
+                      </thead>
+
+                      <tbody>
+
+                        <tr>
+
+                          <td>
+                            <input type="date" class="inp">
+                          </td>
+
+                          <td>
+                              <input type="text" class="inp" placeholder="Input">
+                          </td>
+
+  
+
+                          <td>
+
+                            <select class="inp">
+                              <option value="dhaka">Select Condition</option>
+                              <option value="gazipur_sodor">Still Project</option>
+                              
+                              <option value="gazipur_sodor">Not Done</option>
+                              <option value="gazipur_sodor">Not Start</option>
+                            </select>
+                  
+                         
+                          </td>
+
+
+                     
+                        </tr>
+                      </tbody>
+                      
+                    </table>
+    
+                  </div>
+
+                  <input data-popup-close="popup-1" type="submit" class="button_3" value="Submit">
+                </form> 
+              </div>
+            </div>
+            </div> 
+
+
+            
+       
+
+          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+      </div>
+  </div>
+
+
+
+
+
+
+  <div id="loading"></div>
+  <div class="container">
+
+    <!---------------ASIDE STRAT----------------------->
+    <aside>
+      <div class="top">
+        <div class="logo">
+        </div>
+        <div class="close" id="close-btn">
+                  <span class="material-icons-sharp">
+                    <i class="fa-solid fa-xmark"></i>
+                  </span>
+        </div>
+      </div>
+
+
+    </aside>
+    <!---------------ASIDE END----------------------->
+
+    <!-- ----------START OF MANI----------------------->
+    <main>
+
+        <a href="work_information.html"><h1>Back Work Information <i class="fa-solid fa-circle-arrow-left"></i></h1></a>
+
+        <h1> CRM</h1>
+
+
+
+        <!----------START INSIGHTS---------->
+
+         <!---------END OF INSIGHTS---------->
+
+         <select class="inp">
+            <option value="all">All</option>
+            <option value="stil">Still </option>
+            <option value="not">Not start</option>
+            <option value="ndone">Not Done</option>
+      </select>
+
+
+        <div class="recent-orderse">
+   
+
+          <table class="history">
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tasks Given Date</th>
+                <th>Task Done Date </th>
+                <th>Employee</th>
+                <th>Work</th>
+                <th>Work Condition</th>
+                <th>Tasks</th>
+                <th>Add Work</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+              <tr>
+                
+                <td>0111</td>
+                <td>11.12.22</td>
+                <td>11.12.22</td>
+                <td>Arun</td>
+                <td>       
+                  <div class="progress_tow">
+                    <div class="bar_tow" style="width:85%">
+                      <p class="percent_tow">85%</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>Still</td>
+
+                <td>
+                    <button type="button" class="show button_3">Show</button>
+                
+                </td>
+
+                <td><a data-popup-open="popup-1" href="#"><i class="fa-solid fa-square-plus"></i></a></td>
+
+              </tr>
+
+
+              <tr>
+                
+                <td>0111</td>
+                <td>12.12.22</td>
+                <td>------</td>
+                <td>Arun</td>
+                <td>       
+                  <div class="progress_tow">
+                    <div class="bar_tow" style="width:0%">
+                      <p class="percent_tow">0%</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>Not start</td>
+
+                <td>
+                    <button type="button" class="show button_3">Show</button>
+                
+                </td>
+
+                <td><a href="#"><i class="fa-solid fa-square-plus"></i></a></td>
+
+              </tr>
+
+
+              <tr>
+                
+                <td>0111</td>
+                <td>12.12.22</td>
+                <td>--------</td>
+                <td>Arun</td>
+                <td>       
+                  <div class="progress_tow">
+                    <div class="bar_three"  style="width:10%">
+                        <p class="percent_tow ">10%</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>Not Done</td>
+
+                <td>
+                    <button type="button" class="show button_3">Show</button>
+                
+                </td>
+
+                <td><a href="#"><i class="fa-solid fa-square-plus"></i></a></td>
+              
+              </tr>
+
+
+
+            </tbody>
+          </table>
+
+
+
+          <script type="text/javascript">
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $(".click").hide(1000);
+                });
+                $(".show").click(function(){
+                    $(".click").show(2000);
+                });
+            });
+        </script>
+        
+        <div class="itcon">
+          <div class="con">
+            <div class="hddive click">
+               <div class="">
+                <a href="#" class="textclose" id="hide" data-bs-toggle="tooltip"  title="Close"><i class="fa-solid fa-square-xmark"></i></a>
+               </div>
+    
+    
+               <div class="clear"></div>
+    
+                <p class="hidetext">
+                  Hi Labib You Done This Work In This Project..
+                </p>
+    
+    
+            </div>
+           </div>
+        </div>
+
+
+
+
+
+
+
+          <h1 class="itcon">Project Condition :</h1>
+
+          <div class="insights">
+
+            <!----------TOTAL SCHOLL START---------->
+            <div class="school">
+                    <span class="">
+                      <i class="fa-solid fa-gears"></i>
+                    </span>
+              <div class="middle">
+                <div class="lef">
+                  <h3>Project Condition </h3>
+                </div>
+  
+                <div class="progress">
+                  <svg>
+                    <circle cx ='38' cy='38' r='36'></circle>
+                  </svg>
+  
+                  <div class="number">
+                    <p>81%</p>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <small class="text-muted">
+                Last 8 Hours
+              </small>
+  
+            </div>
+  
+            <!----------TOTAL SCHOLL END---------->
+  
+  
+            <!----------TOTAL SCHOLL CONTACTED START---------->
+            <div class="contacted_school">
+              <span class="">
+                <i class="fa-solid fa-gears"></i>
+              </span>
+              <div class="middle">
+                <div class="lef">
+                  <h3>Project Condition </h3>
+                </div>
+  
+                <div class="progress">
+                  <svg>
+                    <circle cx ='38' cy='38' r='36'></circle>
+                  </svg>
+  
+                  <div class="number">
+                    <p>70%</p>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <small class="text-muted">
+                
+                Full Time
+              </small>
+  
+            </div>
+  
+            <!----------TOTAL SCHOOL CONTACTED END--------->
+  
+            
+          </div>
+
+          <div class="dwonload">
+            <button class="button_2">Dwonload</button>
+          </div>
+          <div class="clear"></div>
+
+        </div>
+
+
+
+
+        
+    </main>
+    <!-- ----------END OF MANI----------------------->
+
+    <!-- ----------START OF RIGHT----------------------->
+    <div class="right">
+      <!-- START OF TOP -->
+        <div class="top">
+          <button id="menu-btn">
+            <span>
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="them-toggler">
+            <span class="active">
+              <i class="fa-solid fa-lightbulb"></i>
+              </span>
+
+              <span>
+                <i class="fa-solid fa-moon"></i>
+              </span>     
+          </div>
+          
+
+          <div class="profile">
+            <div class="info">
+              <p>Hay, <b>Labib</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+
+            <div class="profile-photo">
+              <img src="./img/mdsiddiqulislamlabib.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      <!-- END OF TOP -->
+
+
+  </div>
+    <!-- ----------END OF RIGHT----------------------->
+  </div>  
+</table>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+/* css_reset_code===========start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css_reset_code===========end*/
+/* Font Add start*/
+@font-face {
+    font-family: 'Poppins-Thin';
+    src: url('/font/Poppins-Thin.ttf');
+  }
+
+/* font add end */
+
+/* form start */
+  body{
+    background: #f0f0f6;
+  }.from_header{
+    margin: 30px auto;
+    background: #ffff;
+  }.border{
+    border: 1.2px solid #5b5656;
+  }form label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-right: 15px;
+  }.center{
+    width: 70%;
+    margin: 0 auto;
+}.signup h1 {
+    text-align: center;
+    font-size: 28px;
+    padding: 22px 0 12px;
+    text-transform: capitalize;
+    font-family:'Poppins-Thin';
+  }.message p {
+    margin: 20px 0 6px;
+    text-transform: capitalize;
+    color: #5b5656;
+  }.message a {
+    display: inline-block;
+    font-size: 16px;
+    color: #3d81ba;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }.input_control{
+      width: 100%;
+      margin: 15px 0;
+      height: 30px;
+      color: #515e6e;
+  }.from_header{
+    border: 1px solid #fff;
+  }.btn_control{
+    margin: 30px 0;
+    float: right;
+  }.button{
+    padding: 6px 20px;
+    margin: 10px;
+    border: none;
+    background: #3d81ba;
+    color: #fff;
+  }.button:hover{
+    transition: 1.5s;
+    background: #515e6e;
+    color: #fff;
+  }.button_2{
+    padding: 6px 20px;
+    margin: 10px;
+    border: none;
+    font-size: 10px;
+    background: #3d81ba;
+    color: #fff;
+  } .button_2:hover{
+    transition: 0.5s;
+    background: #515e6e;
+  }.button_3{
+    padding: 4px 15px;
+    margin: 10px;
+    border: none;
+    background: #3d81ba;
+    
+  }.button_3:hover{
+    color: #fff !important;
+    transition: 1.5s;
+    
+  }.clear{
+    clear: both;
+  }
+
+  .btmr{
+    width: auto;
+  }
+/* form end */
+
+
+/* tabile====== strat */
+.table_con{
+  width: 98% !important;
+  height:358px!important;
+}
+
+.td_cntorl{
+  height:400px !important;
+}
+.table_header{
+  margin: 30px auto;
+  background: #ffff;
+  overflow: hidden;
+  
+}#customers{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  border-collapse: collapse;
+  width: 100%;
+}#customers td , #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}#customers td a{
+  text-decoration: none;
+  color: #101D2D;
+  display: inline-block;
+}#customers tr:nth-child(even){
+  background-color: #f4ecec;
+}#customers tr:hover {
+  transition: 0.5s;
+  background-color: #ddd;
+}#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  background-color: #3d81ba;
+  color: white;
+  font-size: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}.nav-link{
+  font-size: 10px;
+}
+
+/* tabile============end */
+
+/* pagination========start */
+
+.pagination {
+  float: right;
+  margin: 15px;
+}.pagination a {
+  color: #515e6e;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}.pagination a.active {
+  background-color: #3d81ba;
+  color: white;
+  border-radius: 5px;
+}.pagination a:hover:not(.active) {
+  transition: 1.5s;
+  background-color: #ddd;
+  border-radius: 1px;
+}
+
+/* pagination=======start */
+
+
+/* navber=======start */
+.navbar{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #515e6e;
+}.nav-item {
+  border-bottom: 2px solid;
+  margin-left: 6px;
+}#mybt_acctive{
+  color: #3d81ba !important;
+}.dwonload{
+    padding-right: 18px;
+    text-align: right;
+}.atten_date{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #515e6e;
+    margin: 10px 0px 10px 30px;
+  }
+
+
+  .atten_date_2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    margin: 10px 0px 10px 30px;
+  }
+/* navber=======start */
+
+
+/* Other page=====start*/
+.total{
+  background: #3d81ba;
+  margin-bottom: 16px;
+}
+#location {
+  color: #515e6e;
+}
+.email_massge{
+ 
+  color: #515e6e;
+  padding: 10px 0px 10px 30px;
+}.texaraya_contorl {
+  margin: 32px;
+}
+
+
+/* distubute dabol page start*/
+
+.select_location{
+  margin: 86px auto;
+  width: 40%;
+  background: #ddd;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 340px;
+  display: none;
+
+}
+
+.fa-solid.fa-square-xmark {
+  float: right;
+  margin-top: 10px;
+  font-size: 24px;
+  color: #3d81ba;
+}
+
+
+.custom_cod{
+  width: 100%;
+  margin: 10px auto;
+  padding: 4px;
+}
+.custom_cod_2{
+  width: 25%;
+}
+/* distubute dabol page end*/
+
+
+/* Other page ====End */
+
+
+/* mida quiray=====start*/
+  @media only screen and (max-width: 800px) {
+    .mr-contorl {
+      margin: 2px 0 20px;
+    }.btn_control{
+      margin: 20px auto;
+      width: 80%;
+      
+    }.pagination {
+      width: 80%;
+      margin: 20px auto;
+    }#customers th,#customers td{
+      font-size: 4px;
+
+    }
+  }
+  /* mida quiray===ends*/

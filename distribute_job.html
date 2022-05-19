@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribute Job</title>
+
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- MATERIAL ICON -->
+    
+    <script src="jquary/jquary.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="myLoad()">
+
+  <div id="loading"></div>
+  <div class="container">
+
+    <!---------------ASIDE STRAT----------------------->
+    <aside>
+      <div class="top">
+        <div class="logo">
+            <img src="./img/ipcl.png" alt="">
+        </div>
+        <div class="close" id="close-btn">
+                  <span class="material-icons-sharp">
+                    <i class="fa-solid fa-xmark"></i>
+                  </span>
+        </div>
+      </div>
+
+        <div class="sidebar">
+
+
+          <a href="index.html" >
+            <span class="">
+              <i class="fa-solid fa-house-user"></i>
+            </span>
+
+            <h3>Dashboard</h3>
+          </a>
+
+          <a href="applications.html"" onclick="myFunction()">
+            <span class="">
+              <i class="fa-solid fa-user-check"></i>
+              </span>
+              <h3>Select Employee</h3>
+            </a>
+    
+        
+        <div class="sub" id="myDIV">  
+            <ul>  
+              <li><a href="applications.html" >Applications</a></li>
+              <li><a href="#" class="active_2">Application Short List</a></li>
+              <li><a href="show_cv.html" >CV</a></li>
+              <li><a href="interview_process.html" >Interview Process</a></li>
+            </ul>
+        </div>
+            
+        <a href="#" class="active"  onclick="humanRe()" >
+            <span class="">
+              <i class="fa-solid fa-id-card"></i>
+            </span>
+            <h3>Human Resources</h3>
+          </a>
+
+
+
+        
+        <div class="sub" id="human">  
+            <ul> 
+                <li><a href="employees_list.html">Employees</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="#" class="active_2">Job Distribution</a></li>
+            </ul>
+        </div>
+
+
+          <a href="total_contacted_school.html">
+                  <span class="">
+                    <i class="fa-solid fa-school"></i>
+                  </span>
+
+                  <h3>School Data</h3>
+          </a>
+
+          <a href="oure_project_list.html">
+            <span class="">
+              <i class="fa-solid fa-briefcase"></i>
+            </span>
+              <h3>Oure Project</h3>
+  
+           </a>
+
+                <a href="#" target="_blank">
+                  <span class="">
+                    <i class="fa-regular fa-credit-card"></i>
+                  </span>
+
+                  <h3>Financial System</h3>
+                </a>
+
+          <a href="#">
+            <span class="material-icons-sharp">
+              settings
+            </span>
+
+            <h3>Setting</h3>
+          </a>
+
+
+          <a href="#">
+            <span class="material-icons-sharp">
+              power_settings_new
+              </span>
+
+            <h3> Log Out</h3>
+          </a>
+        </div>
+    </aside>
+    <!---------------ASIDE END----------------------->
+
+    <!-- ----------START OF MANI----------------------->
+    <main>
+        <h1><i class="fa-solid fa-people-group"></i> Distribute Job</h1>
+    
+        <div class="date">
+          <input type="date">
+        </div>
+    
+        <div class="date">
+          <input type="text" placeholder="Search">
+        </div>
+    
+        <!----------START INSIGHTS---------->
+    
+         <!---------END OF INSIGHTS---------->
+    
+        <div class="recent-orders">
+    
+          <table id="customers">
+            <thead>
+              <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Designation</th>
+                <th>Department</th>
+
+                
+              </tr>
+            </thead>
+    
+    
+            <tbody>
+              <tr>
+                <td>
+                    <input type="text" class="inp" placeholder="Search">
+                </td>
+
+                <td>
+                  <input type="text" class="inp" placeholder="Search">
+                </td>
+
+                <td>
+                    <input type="text" class="inp" placeholder="Search">
+                </td>
+                <td>
+                    
+                  <select class="inp">
+                        <option value="dhaka">Select Department</option>
+                        <option value="gazipur_sodor">IT Department</option>
+                        <option value="gazipur_sodor">Marketing Department</option>
+                  </select>
+                </td>
+
+    
+              </tr>
+    
+            </tbody>
+          </table>
+
+
+        <div class="container-fluid">
+          <div class="row">
+          <div class="col-xs-12">
+            <form class="form-main_3 ">
+              <div class="form-block_3 row">
+                <h1 class="itcon"><i class="fa-solid fa-square-rss"></i> IT Department</h1>
+    
+                <table id="customers">
+                  <thead>
+                    <tr>
+                      <th>Project Name</th>
+                      <th>Start Date</th>
+                      <th>Type</th>
+                      <th>Tasks</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input type="text" class="inp" placeholder="Search">
+                      </td>
+                      <td>
+                          <input type="text" class="inp" placeholder="Search">
+                      </td>
+                      <td>
+                        <select class="inp">
+                          <option value="dhaka">Select Type</option>
+                          <option value="gazipur_sodor">Requirements collection</option>
+                          <option value="gazipur_sodor">Analysis</option>
+                          <option value="gazipur_sodor">Designing</option>
+                          <option value="gazipur_sodor">Coding</option>
+                          <option value="gazipur_sodor">Testing</option>
+                          <option value="gazipur_sodor">Maintenance</option>
+                           </select>
+                      </td>
+                      <td>
+                        <button type="button" class="show button_3">Add</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                  
+                </table>
+
+              </div>
+            </form> 
+          </div>
+        </div>
+        </div> 
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $(".click").hide();
+              $("#hide").click(function(){
+                  $(".click").hide(1000);
+              });
+              $(".show").click(function(){
+                  $(".click").show(2000);
+              });
+          });
+      </script>
+      
+      <div class="con">
+              <div class="click">
+                  <a href="#" class="textclose" id="hide" data-bs-toggle="tooltip"  title="Close"><i class="fa-solid fa-square-xmark"></i></a>
+      
+                  <form action="#" class="">
+                      <textarea class="hidetext" id="" name="" ></textarea>
+                  </form>
+      
+      
+              </div>
+      </div>
+                
+      <div class="dwonload">
+        <button class="button_2">Submit</button>
+      </div>
+
+        <h1><i class="fa-solid fa-list-check"></i> Ongoing Project List</h1>
+
+
+        <!----------START INSIGHTS---------->
+
+         <!---------END OF INSIGHTS---------->
+
+
+
+
+        <div class="recent-orders">
+
+          <table id="customers">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Project Name </th>
+                <th>Status</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>More Data</th>
+                <th>Projects Status</th>
+              </tr>
+            </thead>
+
+
+            <tbody>
+
+                
+              <tr>
+                <td>1</td>
+                <td>CRM</td>
+                
+                <td><p class="warning">Ongoing</p></td>
+                <td>12-02-2022</td>
+                <td>----</td>
+                <td><a href="project_data.html">Data</a></td>
+                <td><a href="projects_status.html">view</a></td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>ABCD</td>
+                
+                <td><p class="warning">Ongoing</p></td>
+                <td>12-02-2022</td>
+                <td>----</td>
+                <td><a href="project_data.html">Data</a></td>
+                <td><a href="projects_status.html">view</a></td>
+              </tr>
+
+             
+
+
+             
+              
+            </tbody>
+          </table>
+
+            <div class="dwonload">
+                <button class="button_2">Download</button>
+            </div>
+            <div class="clear"></div>
+
+          
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+
+          <div class="clear"></div>
+
+
+        </div>
+
+
+
+        
+
+
+
+
+
+    </main>
+    <!-- ----------END OF MANI----------------------->
+
+    <!-- ----------START OF RIGHT----------------------->
+    <div class="right">
+        <!-- START OF TOP -->
+        <div class="top">
+          <button id="menu-btn">
+            <span>
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="them-toggler">
+            <span class="active">
+              <i class="fa-solid fa-lightbulb"></i>
+              </span>
+
+              <span>
+                <i class="fa-solid fa-moon"></i>
+              </span>     
+          </div>
+          
+
+          <div class="profile">
+            <div class="info">
+              <p>Hay, <b>Labib</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+
+            <div class="profile-photo">
+              <img src="./img/mdsiddiqulislamlabib.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- END OF TOP -->
+
+        <!-- START RESEN UPDATE -->
+
+       <!-- END RESEN UPDATE -->
+
+        <div class="sales-analytics">
+
+          <h2>sales Analytics</h2>
+          <div class="item online">
+            <span class="material-icons-sharp icon">
+              real_estate_agent
+              </span>
+
+              <div class="right">
+                <div class="info">
+                  <h3>
+                    Sales Online
+                  </h3>
+                  <small class="text-muted ">
+                    Last 24 Hours
+                  </small>
+    
+                  <h5 class="success">
+                    +39%
+                  </h5>
+                  <h3>8032</h3>
+                </div>
+              </div>
+          </div>
+
+
+
+
+          <div class="item ofline">
+            <span class="material-icons-sharp icon">
+              real_estate_agent
+              </span>
+
+              <div class="right">
+                <div class="info">
+                  <h3>
+                    Sales Ofline
+                  </h3>
+                  <small class="text-muted">
+                    Last 24 Hours
+                  </small>
+    
+                  <h5 class="success">
+                    +69%
+                  </h5>
+                  <h3>81032</h3>
+                </div>
+
+          </div>
+
+          </div>
+
+
+
+        </div>
+        
+    </div>
+    <!-- ----------END OF RIGHT----------------------->
+  </div>  
+</table>
+
+
+<script src="js/index.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    humanRe();
+  });
+</script>
+
+</body>
+</html>
